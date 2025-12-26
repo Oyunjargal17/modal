@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./img/dream-house.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+.project {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  border: 1px solid red;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.hidden {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  border: 1px solid red;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.btn {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+.pro {
+}
+
+.content {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  border: 1px solid red;
+  display: flex;
+  position: absolute;
+  top: 50%; /* Moves the top edge of the element to the vertical midpoint of the parent */
+  left: 50%; /* Moves the left edge of the element to the horizontal midpoint of the parent */
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.content-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.btnX {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
