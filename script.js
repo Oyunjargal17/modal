@@ -1,13 +1,17 @@
 const btn = document.querySelector(".btn");
-const btnX = document.querySelector(".btnX");
-const modal = document.querySelector(".hidden");
 const project = document.querySelector(".project");
+const content = document.querySelector(".content");
+const btnX = document.querySelector(".btnX");
+const overlay = document.querySelector(".overlay");
 
 btn.addEventListener("click", () => {
-  project.classList.toggle("hidden");
-  modal.classList.toggle("hidden");
+  project.classList.add("hidden");
+  content.classList.add("show");
+  overlay.classList.add("show");
 });
+
 btnX.addEventListener("click", () => {
-  project.classList.toggle("hidden");
-  modal.classList.toggle("hidden");
+  content.classList.remove("show");
+  project.classList.remove("hidden");
+  overlay.classList.remove("show");
 });
