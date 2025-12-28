@@ -15,3 +15,8 @@ btnX.addEventListener("click", () => {
   project.classList.remove("hidden");
   overlay.classList.remove("show");
 });
+overlay.addEventListener("click", () => {
+  content.classList.remove("show");
+  project.classList.remove("hidden");
+  overlay.classList.remove("show");
+});
